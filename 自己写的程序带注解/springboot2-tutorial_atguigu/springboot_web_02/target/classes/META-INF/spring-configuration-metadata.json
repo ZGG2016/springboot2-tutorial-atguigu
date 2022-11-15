@@ -1,0 +1,26 @@
+{
+  "groups": [
+    {
+      "name": "management.endpoint.myservice",
+      "type": "org.zgg.springboot_web_02.acutuator.endpoint.MyServiceEndPoint",
+      "sourceType": "org.zgg.springboot_web_02.acutuator.endpoint.MyServiceEndPoint"
+    }
+  ],
+  "properties": [
+    {
+      "name": "management.endpoint.myservice.cache.time-to-live",
+      "type": "java.time.Duration",
+      "description": "Maximum time that a response can be cached.",
+      "sourceType": "org.zgg.springboot_web_02.acutuator.endpoint.MyServiceEndPoint",
+      "defaultValue": "0ms"
+    },
+    {
+      "name": "management.endpoint.myservice.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether to enable the myservice endpoint.",
+      "sourceType": "org.zgg.springboot_web_02.acutuator.endpoint.MyServiceEndPoint",
+      "defaultValue": true
+    }
+  ],
+  "hints": []
+}

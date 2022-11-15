@@ -1,0 +1,33 @@
+# properties文件会和yml文件同时生效，properties文件优先
+person:
+# 双引号不会转义，单引号会转义
+#  userName: zhangsan
+#  userName: "zhangsan \n lisi"
+#  userName: 'zhangsan \n lisi'
+  boss: true
+  birth: 2022/09/11
+  age: 18
+#  interests: [篮球,足球]
+  interests:
+    - 篮球
+    - 足球
+  animal: [猫,狗]
+  score: { english: 80,math: 90 }
+#  score:
+#    - english: 80
+#    - math: 90
+  salarys:
+    - 9999.99
+    - 8888.88
+  pet:
+    name: 大黄
+    weight: 100
+  allPets:
+    sick:
+      - { name: 小a,weight: 100 }
+      - name: 小b
+        weight: 100
+    health:
+      - { name: 阿花,weight: 199.99 }
+      - { name: 阿明,weight: 199.99 }
+  user-name: zhangsan

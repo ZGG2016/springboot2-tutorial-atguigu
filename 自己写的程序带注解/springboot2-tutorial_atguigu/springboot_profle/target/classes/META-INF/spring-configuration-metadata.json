@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "person",
+      "type": "org.zgg.springboot_profle.bean.Boss",
+      "sourceType": "org.zgg.springboot_profle.bean.Boss"
+    }
+  ],
+  "properties": [
+    {
+      "name": "person.age",
+      "type": "java.lang.Integer",
+      "sourceType": "org.zgg.springboot_profle.bean.Boss"
+    },
+    {
+      "name": "person.name",
+      "type": "java.lang.String",
+      "sourceType": "org.zgg.springboot_profle.bean.Boss"
+    }
+  ],
+  "hints": []
+}

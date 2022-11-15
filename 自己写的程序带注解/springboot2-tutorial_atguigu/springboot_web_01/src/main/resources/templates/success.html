@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--   ${...} 获取请求域、session域、对象等值  -->
+    <h1 th:text="${msg}"> haha </h1>
+    <h2>
+        <a href="www.atguigu.com" th:href="${link}"> 去百度 </a> <br/>
+    <!--  @{...}  生成链接 把花括号里的内容当成链接 -->
+        <a href="www.atguigu.com" th:href="@{/link}"> 去百度 </a>
+    </h2>
+</body>
+</html>

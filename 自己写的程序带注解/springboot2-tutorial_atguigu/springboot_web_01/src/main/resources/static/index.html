@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>aaaaaaaaaaaaaaaa</h1>
+
+    <hr/><br>
+
+    测试REST风格:
+    <form action="/user" method="get">
+        <input value="REST-GET 提交" type="submit"/>
+    </form>
+    <form action="/user" method="post">
+        <input value="REST-POST 提交" type="submit"/>
+    </form>
+    <form action="/user" method="post">
+        <input name="_method" type="hidden" value="delete"/>
+        <input name="_m" type="hidden" value="delete"/>
+        <input value="REST-DELETE 提交" type="submit"/>
+    </form>
+    <form action="/user" method="post">
+        <input name="_method" type="hidden" value="PUT"/>
+        <input value="REST-PUT 提交" type="submit"/>
+    </form>
+
+    <hr/><br>
+
+    测试基本注解：
+    <ul>
+        <a href="car/variable/3/owner/lisi">@PathVariable（路径变量）</a><br><br>
+
+        <a href="/car/header/3/owner/lisi">@RequestHeader（获取请求头）</a><br><br>
+
+        <a href="/car/params?id=3&name=lisi">@RequestParam（获取请求参数）</a><br><br>
+
+        <a href="/car/cookie">@CookieValue（获取cookie值）</a><br><br>
+
+        <form action="/save" method="post">
+            @RequestBody（获取请求体[POST]） <br/>
+            用户名：<input name="userName"/> <br>
+            年龄：<input name="age"/>
+            <input type="submit" value="提交"/>
+        </form><br><br>
+
+
+        <li>@RequestAttribute（获取request域属性） RequestAttributeController.java</li><br><br>
+
+        <a href="/cars/sell;low=34;brand=byd,audi,yd">@MatrixVariable（矩阵变量）</a><br>
+        <a href="/cars/sell;low=34;brand=byd;brand=audi;brand=yd">@MatrixVariable（矩阵变量）</a><br>
+        <a href="/boss/1;age=20/2;age=10">@MatrixVariable（矩阵变量）/boss/{bossId}/{empId}</a><br><br>
+
+        <ol>
+            <li>矩阵变量需要在SpringBoot中手动开启</li>
+            <li>根据RFC3986的规范，矩阵变量应当绑定在路径变量中！</li>
+            <li>若是有多个矩阵变量，应当使用英文符号;进行分隔。</li>
+            <li>若是一个矩阵变量有多个值，应当使用英文符号,进行分隔，或之命名多个重复的key即可。</li>
+            <li>如：/cars/sell;low=34;brand=byd,audi,yd</li>
+        </ol><br><br>
+
+        测试封装POJO:
+        <form action="/saveuser" method="post">
+            姓名： <input name="userName" value="zhangsan"/> <br/>
+            年龄： <input name="age" value="18"/> <br/>
+            生日： <input name="birth" value="2019/12/10"/> <br/>
+<!--            宠物姓名：<input name="pet.name" value="阿猫"/><br/>-->
+<!--            宠物年龄：<input name="pet.age" value="5"/>-->
+<!--            测试自定义Converter：-->
+            宠物： <input name="pet" value="啊猫,3"/>
+            <input type="submit" value="保存"/>
+        </form>
+    </ul>
+
+</body>
+</html>

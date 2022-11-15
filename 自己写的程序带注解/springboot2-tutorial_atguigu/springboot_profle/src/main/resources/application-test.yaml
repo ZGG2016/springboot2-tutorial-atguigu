@@ -1,0 +1,5 @@
+person:
+  name: test-lisi
+
+server:
+  port: 7000

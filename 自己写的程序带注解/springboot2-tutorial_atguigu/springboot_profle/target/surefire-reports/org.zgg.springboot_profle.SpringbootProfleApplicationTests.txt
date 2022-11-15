@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.zgg.springboot_profle.SpringbootProfleApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.157 s - in org.zgg.springboot_profle.SpringbootProfleApplicationTests

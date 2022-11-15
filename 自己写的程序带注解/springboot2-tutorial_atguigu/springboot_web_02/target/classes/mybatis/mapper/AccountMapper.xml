@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zgg.springboot_web_02.mapper.AccountMapper">
+
+<!--    public Account getAcct(String username); -->
+    <select id="getAcct" resultType="org.zgg.springboot_web_02.bean.Account">
+        select * from t_account where username=#{username}
+    </select>
+
+</mapper>

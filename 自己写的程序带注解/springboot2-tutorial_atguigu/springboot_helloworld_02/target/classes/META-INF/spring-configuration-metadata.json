@@ -1,0 +1,62 @@
+{
+  "groups": [
+    {
+      "name": "person",
+      "type": "org.zgg.springboot_helloworld_02.bean.Person",
+      "sourceType": "org.zgg.springboot_helloworld_02.bean.Person"
+    }
+  ],
+  "properties": [
+    {
+      "name": "person.age",
+      "type": "java.lang.Integer",
+      "sourceType": "org.zgg.springboot_helloworld_02.bean.Person"
+    },
+    {
+      "name": "person.all-pets",
+      "type": "java.util.Map<java.lang.String,java.util.List<org.zgg.springboot_helloworld_02.bean.Pet>>",
+      "sourceType": "org.zgg.springboot_helloworld_02.bean.Person"
+    },
+    {
+      "name": "person.animal",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.zgg.springboot_helloworld_02.bean.Person"
+    },
+    {
+      "name": "person.birth",
+      "type": "java.util.Date",
+      "sourceType": "org.zgg.springboot_helloworld_02.bean.Person"
+    },
+    {
+      "name": "person.boss",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.zgg.springboot_helloworld_02.bean.Person"
+    },
+    {
+      "name": "person.interests",
+      "type": "java.lang.String[]",
+      "sourceType": "org.zgg.springboot_helloworld_02.bean.Person"
+    },
+    {
+      "name": "person.pet",
+      "type": "org.zgg.springboot_helloworld_02.bean.Pet",
+      "sourceType": "org.zgg.springboot_helloworld_02.bean.Person"
+    },
+    {
+      "name": "person.salarys",
+      "type": "java.util.Set<java.lang.Double>",
+      "sourceType": "org.zgg.springboot_helloworld_02.bean.Person"
+    },
+    {
+      "name": "person.score",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "org.zgg.springboot_helloworld_02.bean.Person"
+    },
+    {
+      "name": "person.user-name",
+      "type": "java.lang.String",
+      "sourceType": "org.zgg.springboot_helloworld_02.bean.Person"
+    }
+  ],
+  "hints": []
+}

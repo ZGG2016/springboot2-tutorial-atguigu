@@ -1,0 +1,20 @@
+#spring:
+#  mvc:
+#    # 修改静态资源访问前缀，
+#    # 原来访问：http://localhost:8080/superset.png  现在访问：http://localhost:8080/static-resources/superset.png
+#    # 配置静态资源的访问前缀，会影响欢迎页面和偏爱图标
+#    static-path-pattern: /static-resources/**
+#
+#  web:
+#    resources:
+#      # 修改默认的静态资源路径
+#      static-locations: [classpath:/newstatic/]
+#      add-mappings: false   # 禁用所有静态资源规则
+
+spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true # 开启页面表单的Rest功能
+    contentnegotiation:
+      favor-parameter: true  # 开启基于请求参数的内容协商
